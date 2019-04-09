@@ -1,0 +1,4 @@
+---
+# defaults file for tamay.docker-ce
+
+docker_users: []
