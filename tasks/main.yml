@@ -15,11 +15,11 @@
   package:
     state: present
     name:
-    - device-mapper-persistent-data
-    - lvm2
-    - docker-ce
-    - docker-ce-cli
-    - containerd.io
+      - device-mapper-persistent-data
+      - lvm2
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
 
 - name: "Add users in docker_users to docker group"
   user:

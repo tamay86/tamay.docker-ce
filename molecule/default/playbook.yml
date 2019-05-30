@@ -1,0 +1,15 @@
+---
+- name: Converge
+  hosts: all
+  become: yes
+  roles:
+    - role: tamay.docker-ce
+
+  tasks:
+    - name: "Test docker"
+      command: docker run hello-world
+      changed_when: no
+      register: _docker_run
+
+    - debug:
+        var: _docker_run.stdout_lines
